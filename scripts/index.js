@@ -1,7 +1,7 @@
   var leavesAnimation = bodymovin.loadAnimation({
     container: document.getElementById('headerLeavesAnim'),
     renderer: 'svg',
-    loop: 13,
+    loop: 16,
     autoplay: true,
     prerender: true,
     path: './assets/motion/leaves.json'
