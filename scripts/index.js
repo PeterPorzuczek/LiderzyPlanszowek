@@ -1,5 +1,5 @@
 const csvurl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSrrzCHLaH_W5TS2RpOrNpcMkjE4qhGDC-XSEWT9Dfz--O3YY50LjXN_d2CI3V67O2ZHfJ17jh7h0LO/pub?gid=2082131865&single=true&output=csv"
-const csvlocal = "./assets/list.csv";
+const csvlocal = "./assets/data/games.csv";
 Papa.parse( csvlocal, {
   download: true,
   complete: function( results ) {
