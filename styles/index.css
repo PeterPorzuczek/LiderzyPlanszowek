@@ -836,7 +836,7 @@ a:hover {
     height: 320px;
   }
 }
-/*Games list*/
+/*Games*/
 .games {
   height: 500px;
   background-color:white;
@@ -901,5 +901,4 @@ a:hover {
   font-size: 0.8em;
   font-weight: 300;
   display: block;
-  
 }
