@@ -10,6 +10,10 @@ a {
   color:white;
   text-decoration: none;
 }
+A[href=""], 
+A[href="#"] {
+  display: none;
+}
 @media only screen and (max-width: 759px) {
   a {
     margin: -1px !important;
@@ -856,11 +860,6 @@ a:hover {
   overflow-y: scroll;
   overflow-x: hidden;
 }
-@media only screen and (max-width: 500px) { 
-  .list {
-      height: 350px;
-    }
-  }
 .search { 
   border-radius: 25px; 
   padding: 7px 14px; 
@@ -903,7 +902,4 @@ a:hover {
   font-weight: 300;
   display: block;
   
-}
-A[href=""], A[href="#"] {
-  display: none;
 }

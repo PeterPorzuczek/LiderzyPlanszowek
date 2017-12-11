@@ -3,8 +3,10 @@ const csvlocal = "./assets/list.csv";
 Papa.parse( csvlocal, {
   download: true,
   complete: function( results ) {
+
         var games = [];
         const data = results.data
+
         for ( var i = 0; i < data.length; i++ ) { 
           if ( data[i][1] != "" ) {
             var game = new Object();
@@ -17,18 +19,16 @@ Papa.parse( csvlocal, {
             games.push( game );
           }
         }
+
         var options = {
           valueNames: [ 'name', 'publisher', { name: 'instruction', attr: 'href' } ],
           item: '<li><h5 class="name"></h5>dostawca: <p class="publisher"></p><a href="instruction" class="instruction">Zobacz instrukcję</a></li>'
         };
+        
         var gamesList = new List('games-list', options, games);
         gamesList.sort('rating', { order: "desc" });
       }
   } )
-
-
-  
-
   
   var leavesAnimation = bodymovin.loadAnimation( {
     container: document.getElementById( 'headerLeavesAnim' ),
