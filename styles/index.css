@@ -22,6 +22,7 @@ ul, li {
   padding: 0 !important;
   letter-spacing: 1px;
   font-size: 16px;
+  list-style: none;
 }
 @media only screen and (max-width: 1000px) {
   ul, li {
@@ -50,8 +51,9 @@ h3 {
 h4 {
   font-family: 'Montserrat';
   font-weight: 700;
-  font-size: 1.8em;
+  font-size: 1.7em;
   margin:7px;
+  text-align: center;
 }
 h5 {
   font-family: 'Montserrat';
@@ -61,7 +63,6 @@ h5 {
   margin: 0px;
   margin-left: 10px;
   margin-right: 10px;
-  text-align: center;
 }
 h6 {
   font-family: 'Montserrat';
@@ -75,6 +76,7 @@ h6 {
   }
 }
 @media only screen and (min-width: 790px) and (max-width: 1400px)  {
+  h4,
   h5 {
     font-size: 1.4em;
   }
@@ -84,6 +86,7 @@ h6 {
   }
 }
 @media only screen and (min-width: 750px) and (max-width: 790px)  {
+  h4,
   h5 {
     font-size: 1.2em;
   }
@@ -93,6 +96,7 @@ h6 {
   }
 }
 @media only screen and (min-width: 730px) and (max-width: 761px)  {
+  h4,
   h5 {
     font-size: 1.5em;
   }
@@ -102,6 +106,7 @@ h6 {
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 730px)  {
+  h4,
   h5 {
     font-size: 1.5em;
   }
@@ -111,6 +116,7 @@ h6 {
   }
 }
 @media only screen and (max-width: 500px) {
+  h4,
   h5 {
     font-size: 1.2em;
   }
@@ -825,4 +831,79 @@ a:hover {
   #map {  
     height: 320px;
   }
+}
+/*Games list*/
+.games {
+  height: 500px;
+  background-color:white;
+  color: #1F2436;
+  padding: 20px;
+  padding-bottom: 5px;
+}
+.games-list {
+  width: auto;
+  height: 400px;
+  background-color:white;
+  color: #1F2436;
+  padding: 0px;
+  margin: auto;
+  margin-bottom: 0px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.list {
+  height: 350px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 500px) { 
+  .list {
+      height: 350px;
+    }
+  }
+.search { 
+  border-radius: 25px; 
+  padding: 7px 14px; 
+  background-color: transparent; 
+  border: solid 1px rgba(0, 0, 0, 0.2); 
+  width: 280px; 
+  box-sizing: border-box; 
+  color: #2e2e2e; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+.search:focus { 
+  outline: none; 
+  border-color: #aaa; 
+}
+@media only screen and (max-width: 759px) { 
+  .search {
+    font-size: 0.95em;
+    width: 220px; 
+  }
+}
+@media only screen and (max-width: 500px) {
+  .search {  
+    font-size: 0.9em;
+    width: 180px; 
+  }
+}
+.name {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.publisher {
+  display: inline;
+  font-weight: bold;
+}
+.instruction {
+  color: #1F2436;
+  font-size: 0.8em;
+  font-weight: 300;
+  display: block;
+  
+}
+A[href=""], A[href="#"] {
+  display: none;
 }
