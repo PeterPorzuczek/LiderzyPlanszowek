@@ -64,8 +64,7 @@
             var gamesList = new List('games-list', options, games);
             gamesList.sort('rating', { order: "desc" });
           }
-      } )
-      
+      } )    
 
     var map;
     function initMap() {
