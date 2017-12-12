@@ -62,7 +62,7 @@
             };
             
             var gamesList = new List('games-list', options, games);
-            gamesList.sort('rating', { order: "desc" });
+            gamesList.sort('name', { order: "asc" });
           }
       } )    
 
